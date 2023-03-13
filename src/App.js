@@ -67,6 +67,9 @@ const Title = styled.text`
   @media(max-width: 798px) {
     font-size: 6vw;
   }
+  @media(max-width: 522px) {
+    font-size: 31px;
+  }
 `;
 
 const Subtitle = styled.text`
@@ -80,6 +83,9 @@ const Subtitle = styled.text`
   @media(max-width: 798px) {
     font-size: 3vw;
   }
+  @media(max-width: 522px) {
+    font-size: 15px;
+  }
 `; 
 
 const Text = styled.text`
@@ -87,6 +93,9 @@ const Text = styled.text`
   font-size: 18px;
   @media(max-width: 798px) {
     font-size: 2.8vw;
+  }
+  @media(max-width: 522px) {
+    font-size: 15px;
   }
 `; 
 

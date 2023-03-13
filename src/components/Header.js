@@ -14,7 +14,8 @@ export default Header
 
 const Container = styled.div`
   height: 80px; 
-  width: 170px; 
+  width: 170px;
+  //width: 100%; 
   position: fixed; 
   top: 0; 
   left: 0; 
@@ -23,6 +24,10 @@ const Container = styled.div`
   flex-direction: row; 
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 798px) {
+    width: 100%;
+    justify-content: start;
+  }
 `;
 
 const Logo = styled.img`
@@ -34,4 +39,7 @@ const Logo = styled.img`
 const Title = styled.text`
   font-size: 30px;
   font-weight: 500;
+  @media(max-width:798px) {
+    margin-left: 10px;
+  }
 `;

@@ -3,6 +3,7 @@ import './App.css';
 import styled from 'styled-components'
 import Header from './components/Header';
 import Board from './components/Board';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Right>
         <Board />
       </Right>
+      <Analytics />
     </Container>
   );
 }

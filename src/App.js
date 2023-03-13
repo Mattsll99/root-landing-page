@@ -42,59 +42,6 @@ const Link = styled.a`
   color: #FFFFFF;
 `;
 
-const Cross = styled.div`
-  height: 60px; 
-  width: 60px; 
-  border-radius: 120px;
-  background: #FFFFFF;
-  z-index: 4;
-  position: absolute; 
-  top: 30px; 
-  right: 30px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  padding: 10px;
-  cursor: pointer;
-`; 
-
-const Wrapper = styled.div`
-  height: 100%; 
-  width: 100%; 
-  position: relative;
-`; 
-
-const Stick = styled.div`
-  height: 100%; 
-  width: 3px;
-  background: #1E1E1E; 
-  border-radius: 10px;
-  position: absolute;
-  top: 0; 
-  bottom: 0; 
-  margin-top: auto; 
-  margin-bottom : auto;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto;
-`;
-
-const Stick2 = styled.div`
-  height: 3px; 
-  width: 100%;
-  background: #1E1E1E; 
-  border-radius: 10px;
-  position: absolute;
-  top: 0; 
-  bottom: 0; 
-  margin-top: auto; 
-  margin-bottom : auto;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto;
-`;
 
 const Left = styled.div`
   height: auto; 
@@ -117,6 +64,9 @@ const Title = styled.text`
     margin-top: 100px;
     font-size: 50px;
   }
+  @media(max-width: 798px) {
+    font-size: 6vw;
+  }
 `;
 
 const Subtitle = styled.text`
@@ -127,11 +77,17 @@ const Subtitle = styled.text`
   @media(max-width: 937px) {
     font-size: 20px;
   }
+  @media(max-width: 798px) {
+    font-size: 3vw;
+  }
 `; 
 
 const Text = styled.text`
   font-weight: 200; 
   font-size: 18px;
+  @media(max-width: 798px) {
+    font-size: 2.8vw;
+  }
 `; 
 
 const Button = styled.div`

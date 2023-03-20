@@ -5,6 +5,12 @@ import Header from './components/Header';
 import Board from './components/Board';
 import { Analytics } from '@vercel/analytics/react';
 
+import { createClient } from '@supabase/supabase-js'
+
+// Create a single supabase client for interacting with your database
+const supabase = createClient('https://ebhtghzahkcczuemtchc.supabase.co', 'public-anon-key')
+
+
 function App() {
 
   return (
@@ -15,7 +21,7 @@ function App() {
         <Subtitle>Your personal healthcare assistant</Subtitle>
         <Text style={{marginTop: "20px"}}>Unlock your higher energy and inner peace through a deeper self consciousness</Text>
         <Text style={{marginTop: "20px"}}>Whether it's nutrition, sport, breathing techniques, visualization, <br />Root guides you through all areas of your life to help you reach your full potential.</Text>
-        <Link href='https://1bdlslro48r.typeform.com/to/mmi3TMIa' target='_blank'>
+        <Link href='https://matthias-sylla.formaloo.net/82uvm' target='_blank'>
         <Button>Get started - It's free</Button>
         </Link>
       </Left>
